@@ -9,7 +9,7 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const { decode } = require('jsonwebtoken');
 const bcript =require("bcrypt")
-const { TOKEN_SECRET, CLIENT_ID_FB, CLIENT_SECRET_FB, CLIENT_ID_GO, CLIENT_SECRET_GO} = process.env
+const { TOKEN_SECRET, CLIENT_ID_FB, CLIENT_SECRET_FB, CLIENT_ID_GO, CLIENT_SECRET_GO, URL_FB, URL_GO} = process.env
 
 module.exports = function (passport){
    
@@ -53,7 +53,7 @@ module.exports = function (passport){
     passport.use(new FacebookStrategy({
         clientID: CLIENT_ID_FB,
         clientSecret: CLIENT_SECRET_FB,
-        callbackURL: "http://localhost:3001/user/login_fb"
+        callbackURL: URL_FB || "http://localhost:3001/user/login_fb"
       },
       function(accessToken, refreshToken, profile, done) {
         User.findOrCreate({id:profile.id}, function(err, user) {
@@ -66,7 +66,7 @@ module.exports = function (passport){
     passport.use(new GoogleStrategy({
         clientID: CLIENT_ID_GO,
         clientSecret: CLIENT_SECRET_GO,
-        callbackURL: "http://localhost:3001/login/auth/google/login"
+        callbackURL: URL_GO || "http://localhost:3001/login/auth/google/login"
       },
       function (accessToken, refreshToken,profile, cb)  {
           (async()=>{
