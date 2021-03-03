@@ -1,0 +1,35 @@
+
+.divNavBar {
+	background-color: #151515;
+	height: 78px;
+   margin-left: 220px;
+   margin-right: all;
+   display: flex;
+  justify-content:right ;
+  align-items: center;
+  z-index:1;
+}
+
+.NavLink {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color:white;
+
+}
+
+.NavLink:hover {
+  background : #CEF5EF;
+}
+
+.dropdownbutton {
+  background-color: black;
+  z-index:11;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 200%;;
+  border-left: 10px;
+}

@@ -1,0 +1,67 @@
+[
+    {
+        "name":"Rock",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":2,
+        "name":"Pop",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":3,
+        "name":"Cumbia",
+        "description":"Esa losdd sdas dsds"
+    },
+    
+    {
+        "id":4,
+        "name":"Vallenato",
+        "description":"Esa losdd sdas dsds"
+    },
+    
+    {
+        "id":5,
+        "name":"Jazz",
+        "description":"Esa losdd sdas dsds"
+    },
+    
+    {
+        "id":6,
+        "name":"Techno",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":7,
+        "name":"Indie Rock",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":8,
+        "name":"Hip-Hop",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":9,
+        "name":"Rap",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":10,
+        "name":"Reggaeton",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":11,
+        "name":"Heavy Metal",
+        "description":"Esa losdd sdas dsds"
+    },
+    {
+        "id":12,
+        "name":"Clasica",
+        "description":"Esa losdd sdas dsds"
+    }
+    
+    
+
+]

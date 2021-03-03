@@ -1,0 +1,32 @@
+
+.container{
+    margin-left: 50%;
+}
+
+.heading{
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.imgHolder{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#input[type="file"]{
+    display:none;
+}
+
+.btnForm{
+    display: flex;
+    justify-content: center;
+}

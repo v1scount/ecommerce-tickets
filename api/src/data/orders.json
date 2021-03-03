@@ -1,0 +1,31 @@
+[
+    {
+        "state":"carrito",
+        "userId":"4"
+    },
+    {
+        "state":"carrito",
+        "userId":"2"
+    },
+    {
+        "state":"completada",
+        "userId":"1"
+    },
+    {
+        "state":"procesando",
+        "userId":"3"
+    },
+    {
+        "state":"cancelada",
+        "userId":"4"
+    },
+    {
+        "state":"completada",
+        "userId":"2"
+    },
+    {
+        "state":"creada",
+        "userId":"5"
+    }
+
+] 

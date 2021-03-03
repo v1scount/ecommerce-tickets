@@ -1,0 +1,128 @@
+.table {
+  margin-left: 250px;
+  margin-right: 100px;
+  padding-top: 120px;
+}
+
+#headerTable {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+#headerTable > tbody > tr > td,
+#headerTable > tbody > tr > th,
+#headerTable > tfoot > tr > td,
+#headerTable > tfoot > tr > th,
+#headerTable > thead > tr > td,
+#headerTable > thead > tr > th {
+  padding: 15px 8px;
+  color: white;
+  border-bottom: 1px groove #9098a0;
+}
+
+.titleDiv {
+  font-size: 30px;
+  text-align: center;
+}
+
+.titleReviewFormUser {
+  cursor: pointer;
+  height: 20px;
+  color: #334e68;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.modalContainer {
+  color: black;
+}
+
+/* .reviewsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+  } */
+
+.inputDescription {
+  height: 100px;
+  width: 300px;
+  margin-left: 15%;
+}
+
+.labelDescription {
+  margin-left: 15%;
+}
+
+.ratingStars {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 250px;
+  margin-left: 10%;
+}
+
+.countCharacters {
+  margin-left: 15%;
+}
+
+.modalStyle {
+  color: #ffffff;
+  background-color: #2e2e2e;
+}
+
+#headerTable {
+  text-align: center;
+}
+
+#rowOrder {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  height: 40px;
+  padding-top: 10px;
+  border-bottom: 1px groove #9098a0;
+  /* border-right: 1px groove #9098a0;
+  border-left: 1px groove #9098a0; */
+}
+
+#rowOrder2 {
+  background-color: #1f1e1e;
+  color: #ffffff;
+  height: 40px;
+  padding-top: 10px;
+  border-bottom: 1px groove #9098a0;
+  /*   border-right: 1px groove #9098a0;
+  border-left: 1px groove #9098a0; */
+}
+
+.navDropdownList {
+  opacity: 0.9;
+  color: white;
+  margin-left: -12px;
+  margin-top: -8px;
+}
+
+.navDropdownList:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .table {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 140px;
+    font-size: 12px;
+    
+  }
+  .titleOrderDetail{
+    margin-left: 50px;
+  }
+  #rowOrder {
+    padding-top: 0px;
+    
+  }
+  #rowOrder2 {
+    padding-top: 0px;
+  }
+}

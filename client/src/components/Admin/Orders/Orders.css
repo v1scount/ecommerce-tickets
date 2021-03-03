@@ -1,0 +1,57 @@
+.main-div{
+  margin-top: 90px;
+}
+
+.tableParent{
+  width: 60% !important;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  border-color: transparent !important;
+}
+
+#tableResponsive{
+  margin: 0 auto;
+}
+
+.button-groups {
+  padding-bottom: 20px;
+  margin-right: 900px;
+}
+
+.d-flexsearch{
+  display:flexbox
+}
+
+#input-filtersearch {
+  background-color: #151515;
+  border: transparent;
+  width: 200px;
+  border-radius: 20px;
+  color: white;
+}
+
+.checks{
+  display: inline-block;
+  width: 80%;
+  padding-left: 30px;
+  padding-top: 80px;
+  
+}
+
+@media only screen and (max-width: 1360px) {
+  .checks{
+    display: block;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 6px;
+    
+  }
+}
+#modal {
+  background-color: #2e2e2e;
+}
+
+#modal.title {
+  font-size: 40px;
+}

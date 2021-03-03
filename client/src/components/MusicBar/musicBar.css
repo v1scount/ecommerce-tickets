@@ -1,0 +1,64 @@
+.card-wow-fadeInDown{
+    
+    width: 12% !important;
+    margin-top: 40px;
+    padding-top: 5%;
+    
+}
+
+.card-body{
+    background-color: white;
+    /* background-color: transparent; */
+    color: black;
+    /* margin-bottom: 100px;  *//*cambio*/
+   /*  margin-left: -20px; */
+}
+.musicbar-container{
+    padding-left: 220px;
+}
+
+.btn-hide {
+    display: none;
+}
+
+.btn-show {
+    display: block;
+}
+
+.player-controls {
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+}
+
+.player-controls progress {
+    width: 90%;
+}
+
+.player-controls progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    color: blue;
+    height: 8px;
+}
+
+.player-controls progress[value]::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    color: blue;
+}
+
+.player-controls progress::-webkit-progress-value {
+    background-color: blue;
+}
+
+.card-wow-fadeInDown{
+    transition: transform .5s; 
+    
+  }
+  .card-wow-fadeInDown:hover{
+    transform: scale(1.1);
+    transition: .5s ease;
+  }

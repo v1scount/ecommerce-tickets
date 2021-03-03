@@ -1,0 +1,180 @@
+.containerDiv {
+  display: block;
+  justify-content: center;
+  height: 100%;
+}
+
+.profileAccountSettings {
+  padding-left: 220px;
+  padding-top: 100px;
+}
+
+#contentUserProfile{
+    background-color: #151515;
+    margin-bottom: 40px;
+}
+
+.titleDiv {
+  font-size: 30px;
+  text-align: center;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid black;
+  margin-top: 0px;
+}
+
+.editimg {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* margin-top: -60px; */
+}
+
+#divCustomFile {
+  margin-top: -158px;
+}
+
+.formdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #313131;
+}
+
+.labelstyles {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+
+.editInfo {
+  display: flex;
+  flex-direction: column;
+  margin: all;
+  height: 60px;
+}
+
+.modal {
+  background-color: #2e2e2e;
+}
+
+/* .btnChange{
+    margin-top: 110px;
+    margin-left: -250px;
+} */
+
+/* #customFileUpload {
+  position: absolute;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-left: -145px;
+  margin-top: -300px;
+} */
+
+#listOptions {
+  padding-top: 50px;
+  /* display: none; */
+}
+#navTabs{
+    margin-top: 0px;
+}
+
+.btnChanges{
+    margin-top: 10px;
+    width: 150px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    background-color: #102A43 !important;
+    border: 1px solid #313131;
+    color: white;
+}
+
+#inputs{
+ width: 50%;
+ margin: 0 auto;
+ margin-bottom: 20px;
+}
+
+.photoInput{
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+.input[type="file"] {
+    display: none;
+}
+
+#inputs::value {
+    color: #aab7c4;
+    padding-left: 0px;
+    font-size: 15px;
+  }
+
+#customFileUpload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 150px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#btnSaveLoad{
+    border: none;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    width: 170px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+    margin-left: -20px;
+    background-color: #334E68 !important;
+}
+
+.button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;    
+}
+
+#editProfile{
+  margin-bottom:20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .profileAccountSettings{
+    width: 150% !important;
+    margin-left: -215px;
+  }
+  
+  #contentUserProfile{
+    margin-bottom: 40px;
+  }
+  
+  .profile-avatar {
+    width: 140px;
+  }
+  .photoInput{
+    margin-top: 40px;
+    margin-left: 80px;
+    padding-right: 100px;
+}
+#inputs{
+  margin-left: 60px;
+  width: 200px;
+}
+  }
+  

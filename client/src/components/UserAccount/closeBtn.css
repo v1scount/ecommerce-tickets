@@ -1,0 +1,39 @@
+.close {
+  background: transparent;
+  color: rgb(116, 115, 115);
+  border-radius: 20px;
+  box-shadow: #ffffff;
+  border: transparent;
+  transition: all ease-out 280ms;
+  font-size: 28px;
+}
+
+.starrating > input {display: none;}  
+
+.starrating > label:before { 
+  content: "\f005"; 
+  margin: 2px;
+  font-size: 24px;
+  font-family: FontAwesome;
+  display: inline-block; 
+  margin-left: 20px;
+  
+}
+
+.starrating > label
+{
+  color: white
+  
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ;
+ } 
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ; 
+ } 
+
+ #divStars{
+  padding-right: 60px;
+ }

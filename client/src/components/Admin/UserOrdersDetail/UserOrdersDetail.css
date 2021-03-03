@@ -1,0 +1,29 @@
+.table-parent {
+  width: 60% !important;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.button-groups {
+  padding-bottom: 20px;
+  margin-right: 900px;
+}
+
+/* .navSearch {
+  margin-left: 400px;
+} */
+
+/* #input-search {
+  background-color: #525252;
+  border: transparent;
+  color: white;
+  width: 140px;
+} */
+
+/* #icon-search {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+ */

@@ -1,0 +1,73 @@
+.orderContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #1a1a1a; */
+  height: 890px;
+}
+
+.alignedTitle{
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 140px;
+}
+
+.container2{
+  margin-left: 200px;
+  margin-top: -100px;
+}
+#input-plus{
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 17px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+#input-minus{
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 3px;
+  font-size: 10px; 
+  cursor: pointer;
+}
+
+#table-order{
+  color: whitesmoke;
+  height: 100%;  
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px groove #ddd;
+}
+
+.btn.btn-customized{
+  background-color: #102A43;
+  color: #f5f4f4;
+}
+
+.btn-checkoutOrder{
+  background-color: #243B53;
+  color: white;
+}
+
+.btn-checkoutOrder:hover{
+  opacity: 0.8;
+  color: white;
+}
+
+.btn.btn-customized:hover{
+  opacity: 0.8;
+  color: #f5f4f4;
+}
+
+.heading{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .container2{
+    margin-left: 0px;
+    margin-top: -200px;
+    width: 100%;
+  }
+  }

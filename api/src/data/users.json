@@ -1,0 +1,56 @@
+[
+    {
+        
+        "username":"admin",
+        "email":"admin@mail.com",
+        "givenName": "admin@mail.com",
+        "familyName": "admin",
+        "password":"$2b$10$K4p2hzKaoxu.5poVUCU8yO01JH9Bm0RMthg2kkYmn64gYVnePFdnq",
+        "photoURL":"https://thumbs.dreamstime.com/b/inicio-de-sesi%C3%B3n-administrador-en-el-icono-del-port%C3%A1til-vector-stock-166205404.jpg",
+        "isAdmin":true
+       
+    },
+    {
+        
+        "username":"carla2021",
+        "email":"carla@mail.com",
+        "givenName": "carla",
+        "familyName": "perez",
+        "password":"$2b$10$R4uqjhvnabtq42eh7Kmo.OWq7qfBx.h35e9jFIi6Klo55dyEDKvIm",
+        "photoURL":"https://c6oxm85c.cloudimg.io/cdno/n/q85/https://az617363.vo.msecnd.net/imgmodels/models/md10003147/130eeefb-7418-4f25-ba58-e05e95993d40_thumb.jpg",
+        "isAdmin":false
+       
+    },
+    {
+        
+        "username":"Alejo2021",
+        "email":"alejo",
+        "givenName": "alejo@mail.com",
+        "familyName": "caseres",
+        "password":"$2b$10$R4uqjhvnabtq42eh7Kmo.OWq7qfBx.h35e9jFIi6Klo55dyEDKvIm",
+        "photoURL":"https://haciendofotos.com/wp-content/uploads/las-mejores-fotos-para-el-perfil-whatsapp-wasap-minions.jpg",
+        "isAdmin":false
+       
+    },
+    {
+        
+        "username":"pepito2021",
+        "email":"pepito@mail.com",
+        "givenName": "pepito",
+        "familyName": "luna",
+        "password":"$2b$10$R4uqjhvnabtq42eh7Kmo.OWq7qfBx.h35e9jFIi6Klo55dyEDKvIm",
+        "photoURL":"https://i.pinimg.com/280x280_RS/0b/b4/a1/0bb4a197e00538bfc3b0476b9a117f8f.jpg",
+        "isAdmin":false
+       
+    },
+    {
+        "username":"anabel21",
+        "email":"anabel@mail.com",
+        "givenName": "anabel",
+        "familyName": "monera",
+        "password":"$2b$10$R4uqjhvnabtq42eh7Kmo.OWq7qfBx.h35e9jFIi6Klo55dyEDKvIm",
+        "photoURL":"https://pbs.twimg.com/profile_images/908766619660414976/YUL54Rul.jpg",
+        "isAdmin":false
+    }
+    
+]

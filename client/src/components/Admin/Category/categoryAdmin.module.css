@@ -1,0 +1,109 @@
+.productos {
+  padding-top: 80px;
+  margin-left: 120px;
+}
+
+.containerTable {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.table {
+  margin-top: -20px;
+  width: 70%;
+  text-align: center;
+}
+
+.table thead th {
+  background-color: #1a1a1a !important;
+}
+
+.containerTitle {
+  text-align: center;
+  background-color: #313131;
+  /* margin-top: 50px; */
+  color: white;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: white;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15%;
+  margin-top: 50px;
+  /* margin-bottom: -22px; */
+}
+
+#btnCustomized {
+  background-color: #243b53;
+  color: #ffffff;
+  border: transparent;
+}
+
+.columnas {
+  font-size: 14px !important;
+  padding: 7px 16px !important;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #1a1a1a !important;
+}
+
+.imgItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgItem .imgProduct {
+  border-radius: 10px;
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  min-width: 9%;
+  border: 2px solid;
+  box-sizing: border-box;
+}
+
+.imgProduct {
+  transition: transform 0.5s;
+}
+.imgProduct:hover {
+  transform: scale(1.8);
+}
+
+#btnEditCustomized {
+  background-color: #303f9f;
+  border: 1px solid #313131;
+}
+
+#btnDeleteCustomized {
+  background-color: #c62828;
+  border: #313131;
+}
+
+@media screen and (max-width: 800px) {
+  .table {
+    width: 150% !important;
+    margin-left: -120px;
+  }
+
+  .title {
+    margin-left: -100px;
+  }
+  #btnCustomized {
+    margin-right: 60px;
+    width: 180px;
+  }
+}
+
+.center {
+  text-align: center;
+}

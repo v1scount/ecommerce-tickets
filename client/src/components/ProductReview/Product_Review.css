@@ -1,0 +1,28 @@
+.reviewsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input-description {
+  height: 100px;
+  width: 500px;
+}
+
+.label-description {
+  margin-top: 60px;
+}
+
+.rating-stars {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 250px;
+  margin-left: -20px;
+}
+
+.reviewTitle {
+    margin-top: 80px;
+}

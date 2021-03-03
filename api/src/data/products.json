@@ -1,0 +1,210 @@
+[
+    {
+        
+        "name":"Guns & Roses",
+        "price": 100,
+        "stock": 50,
+        "description":"More info soon!",
+        "img":"https://www.orbitaRock.com/sites/default/files/styles/optimizado-820-escalable/public/articles2014/guns_n_roses.jpg?itok=h94JIrQj"
+    },
+    {
+        
+        "name": "Queen",
+        "price": 100,
+        "stock": 50,
+        "description":"More info soon!",
+        "img":"https://dvfnvgxhycwzf.cloudfront.net/media/SharedImage/image500/.f1YaJf1T/SharedImage-8021.jpg?t=fae5e7c7084ba5746090"
+    },
+    {
+        
+        "name":"Nirvana",
+        "price": 250,
+        "stock": 35,
+        "description":"More info soon!",
+        "img":"https://indiehoy.com/wp-content/uploads/2020/09/nirvana-logo.jpg"
+    },
+    {
+        
+        "name":"Marc Anthony",
+        "price": 250,
+        "stock": 20,
+          "description":"More info soon!",
+        "img":"https://ca-times.brightspotcdn.com/dims4/default/36fa42d/2147483647/strip/true/crop/1057x712+0+0/resize/840x566!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fea%2Faf%2Feafcf1ea474b96b3a0bb1a1ba56f%2Fcompra-marc-anthony-12-cuadros-1035435.JPG"
+    },
+    {
+        
+        "name":"La Nueva Luna",
+        "price": 200,
+        "stock": 25,
+           "description":"More info soon!",
+        "img":"https://1.bp.blogspot.com/-TEWQHo3tc6Q/V3hKSzh0oQI/AAAAAAAADMM/igboWG6iJeQMwXIdpVNMtl2nryWW5fuIACKgB/s320/la-nueva-luna-la-fuerza-joven-1996.jpg"
+    },
+    {
+        
+        "name":"El Gran Combo de Puerto Rico",
+        "price": 250,
+        "stock": 20,
+          "description":"More info soon!",
+        "img":"https://img.discogs.com/MP774xKlKdXKTV_T_SlNm689zhI=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-5042884-1382952037-5436.jpeg.jpg"
+    },
+    {
+        
+        "name":"Shakira",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://los40es00.epimg.net/los40/imagenes/2017/04/06/album/1491501684_617106_1491503108_album_normal.jpg"
+    },
+    {
+        
+        "name":"Bacilos",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://direct.rhapsody.com/imageserver/images/Alb.468327697/170x170.jpg"
+    },
+    {
+        
+        "name":"RBD",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://img.discogs.com/o6F1CBJucQOHRGp0mahu3Rb8Li4=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-3099392-1568483341-9616.jpeg.jpg"
+    },
+    {
+        
+        
+        "name":"Backstreet boys",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://blogmistermusic.files.wordpress.com/2019/01/600x600bf.png?w=361&h=361"
+    },
+    {
+        
+        
+        "name":"Timbiriche",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://upload.wikimedia.org/wikipedia/en/7/7d/La_Banda_Timbiriche_en_Concierto_album_cover.jpg"
+    },
+    {
+        
+        
+        "name":"Beyonce",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://imagenes.elpais.com/resizer/abUZokPMJ39U2vh46p7ovTM20ds=/768x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/CS3M3K76INBZFBGQFQAYRIMLE4.jpg"
+    },
+    {
+        
+        
+        "name":"Beastie Boys",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://www.larata.cl/wp-content/uploads/2020/01/beastie-boys-700x525.jpg"
+    },
+    {
+        
+        
+        "name":"Eminem",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://miro.medium.com/max/900/1*qhKdx3DUOo26etSKJhnxWw.jpeg"
+    },
+    {
+        
+        
+        "name":"Jay-Z",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://upload.wikimedia.org/wikipedia/en/7/74/Jay-z-vol-3-life-and-times-s-carter.jpg"
+    },
+    {
+        
+        
+        "name":"Calle 13",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://i.imgur.com/wVwGyKp.jpg"
+    },
+    {
+        
+        
+        "name":"Daddy Yankee",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://talentomusical.net/wp-content/uploads/2020/02/Albumism_DaddyYankee_BarrioFino_MainImage.jpg"
+    },
+    {
+        
+        
+        "name":"Bad Bunny",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://cdn2.mediotiempo.com/uploads/media/2020/05/10/bad-bunny-avisos-previos-lanzamiento.jpg"
+    }
+    ,
+    {
+        
+        
+        "name":"Nicky Jam",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://img.discogs.com/rjmJDroGwujTye2l7np32DqastI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-13153734-1548987183-6163.jpeg.jpg"
+    },
+    {
+        
+        
+        "name":"Anitta",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://www.buenamusica.com/media/fotos/cantantes/biografia/anitta.jpg"
+    },
+    {
+        
+        
+        "name":"Alexis & Fido",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://www.famousbirthdays.com/group_images/medium/alexis-fido-band.jpg"
+    },
+    {
+        
+        
+        "name":"The Weeknd",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://www.elquintobeatle.com/wp-content/uploads/2020/03/the-weeknd-2020-1-1068x1602.jpg"
+    },
+    {
+        
+        
+        "name":"Duki",
+        "price": 250,
+        "stock": 20,
+         "description":"More info soon!",
+        "img":"https://www.filo.news/__export/1565217918279/sites/claro/img/2019/08/07/dukinuevovideo.jpg_423682103.jpg"
+    },
+    {
+        
+        
+        "name":"Linkin Park",
+        "price": 250,
+        "stock": 20,
+        "description":"More info soon!",
+        "img":"https://garajedelRock.com/wp-content/uploads/2019/10/linkin-park-2001-1024x768.jpg"
+    }
+]

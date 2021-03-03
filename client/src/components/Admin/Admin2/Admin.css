@@ -1,0 +1,208 @@
+.mainAdmin {
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 80px;
+  color: white;
+}
+
+#textCounter {
+  margin-left: 70px;
+  margin-top: -15px;
+  font-size: 40px;
+}
+
+.form-control {
+  background-color: #333232;
+  border: 1px solid #e4e7ea;
+  border-radius: 0;
+  box-shadow: none;
+  color: #565656;
+  height: 38px;
+  max-width: 100%;
+  padding: 7px 12px;
+  transition: all 300ms linear 0s;
+  color: white;
+}
+.form-control:focus {
+  background-color: #333232;
+  border-color: #e4e7ea;
+  color: white;
+}
+.input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.input-lg {
+  height: 44px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.col-sm-12,
+.col-xs-12,
+.col-xs-6 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.white-box {
+  background-color: #1a1a1a;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+.white-box .box-title {
+  margin: 0 0 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+}
+
+.comment-center {
+  margin: 0 -25px;
+}
+.comment-center .comment-body {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  display: table;
+  padding: 20px 25px;
+}
+
+.comment-center .user-img {
+  width: 40px;
+  display: table-cell;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+.comment-center .user-img img {
+  width: 100%;
+}
+.comment-center .mail-contnet {
+  display: table-cell;
+  padding-left: 15px;
+  vertical-align: top;
+}
+.comment-center .mail-contnet h5 {
+  margin: 0;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.comment-center .mail-contnet .mail-desc {
+  font-size: 14px;
+  display: block;
+  margin: 8px 0;
+  line-height: 25px;
+  color: #848a96;
+  height: 50px;
+  overflow: hidden;
+}
+.comment-center .mail-contnet .time {
+  display: block;
+  font-size: 10px;
+  color: #2b2b2b;
+}
+
+.col-in {
+  padding: 20px;
+}
+.col-in h3 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.progress {
+  -webkit-box-shadow: none !important;
+  background-color: rgba(120, 130, 140, 0.13);
+  box-shadow: none !important;
+  height: 4px;
+  border-radius: 0;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+.progress-bar {
+  box-shadow: none;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 12px;
+}
+.progress.progress-sm {
+  height: 8px !important;
+}
+.progress.progress-sm .progress-bar {
+  font-size: 8px;
+  line-height: 5px;
+}
+.progress.progress-md {
+  height: 15px !important;
+}
+.progress.progress-md .progress-bar {
+  font-size: 10.8px;
+  line-height: 14.4px;
+}
+.progress.progress-lg {
+  height: 20px !important;
+}
+.progress.progress-lg .progress-bar {
+  font-size: 12px;
+  line-height: 20px;
+}
+.progress-bar-primary {
+  background-color: #b5a8b9;
+}
+
+.progress-bar-megna {
+  background-color: #aec9cb;
+}
+
+.progress-bar-danger {
+  background-color: #cbb2ae;
+}
+
+.table {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 15px 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .white-box {
+    background-color: #1a1a1a;
+  }
+  .mainAdmin {
+    width: 200% !important;
+    margin-left: -280px;
+  }
+
+  .lineTableOrders {
+    border-bottom: 1px solid #7b7c7c;
+    width: 380px;
+  }
+
+  #modal{
+    width: 100% !important;
+  }
+
+  #textCounter{
+    margin-left: 350px;
+    margin-top: -45px;
+  }
+
+  /*  .white-box .box-title {
+    margin: 0 0 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+  } */
+}

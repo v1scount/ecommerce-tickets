@@ -1,0 +1,176 @@
+.main-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 250px;
+  width: 500px;
+  background: url(https://i.pinimg.com/originals/45/07/bb/4507bbb0616b7712f765a3a0053d1cab.gif)
+    no-repeat center center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 330px;
+  width: 500px;
+  text-align: center;
+  background-color: #1a1a1a;
+}
+
+.name-user {
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  padding-left: 30px;
+  color: white;
+  border: 1px solid #313131;
+}
+.passwordUser {
+  border-radius: 20px;
+  background-color: #1a1a1a !important;
+  padding-left: 30px;
+  color: white;
+  border: 1px solid #313131;
+}
+
+.passwordUser:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(114, 114, 114);;
+  background-color: #1a1a1a !important;
+}
+
+.name-user:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(114, 114, 114);;
+}
+
+.legend {
+  position: relative;
+}
+
+.buttonLogin {
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  background-color:#102A43;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.buttonLogin:hover {
+  opacity: 0.8;
+}
+
+.link {
+  font-size: 12px;
+  font-weight: 200;
+  margin-left: 120px;
+  color: #ffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #ffff;
+}
+.registro {
+  height: 20px;
+  background-color: transparent;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #ffff;
+}
+.registro:hover {
+  text-decoration: underline;
+}
+
+#iconPassword {
+  margin-left: 10px;
+  position: absolute;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+#iconUser {
+  margin-left: 10px;
+  position: absolute;
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+.buttonGoogleLogin{
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  background-color:#C62828;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.title{
+  color:black;
+  padding: 40px;
+}
+.header{
+  padding: 40px;
+}
+.modalPassword{
+color: #ffffff;
+background-color: #2e2e2e;
+}
+
+.modalInputPassword{
+margin-left: 130px;
+line-height: 25px;
+}
+
+#btnEditCustomized{
+background-color: #303F9F;
+border: 1px solid #313131;
+color: white;
+}
+
+#btnDeleteCustomized{
+background-color: #C62828;
+border: #313131;
+color: white;
+}
+
+#btnVerifiedPassword{
+background-color: #486581;
+border: 1px solid #313131;
+color: white;
+margin-left: 8px;
+}

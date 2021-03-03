@@ -1,0 +1,35 @@
+.divFather{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+}
+
+/* .center {
+	margin-left: 25%;
+}
+
+.formName{
+	width: 300px;
+	margin-left: 25%;
+}
+
+.formDescription{
+	width: 300px;
+	margin-left: 25%;
+}
+
+.labelName{
+	margin-left: 25%;
+}
+
+.labelDescription{
+	margin-left: 25%;
+}
+*/
+.btnSubmit{
+	margin-left: 15%;
+	background-color: #198754;
+	border: transparent;
+	width: 150px;
+} 

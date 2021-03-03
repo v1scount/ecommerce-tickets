@@ -1,0 +1,74 @@
+.container-main{
+  display: flex;
+  position:relative;
+  justify-content: center;
+  width: 375px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 150px;
+  
+}
+
+.form-div{
+  height: 750px;
+  width: 400px;
+}
+
+.button{
+  margin-left: 25%;
+  width: 50%;
+  margin-top: 10px;
+}
+.google-btn{
+  width: 184px;
+  height: 42px;
+  background-color: #4285f4;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+.google-icon-wrapper{
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+.btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.btn-text a {
+  color:white;
+}
+.googleIcon{
+  height:25px;
+  
+}
+.btn-text:hover {
+  box-shadow: 0 0 6px ;
+  cursor: pointer;
+}
+.btn-text:active {
+  background:#1669F2;
+}
+
+.buttonSignUpGoogle{
+  background-color: #C62828;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);

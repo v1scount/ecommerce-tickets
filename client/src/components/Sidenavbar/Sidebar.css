@@ -1,0 +1,253 @@
+.sidebar-container {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #181818;
+  color: #fff;
+  z-index: 11 !important;
+}
+
+.content-container {
+  padding-top: 20px;
+}
+
+.sidebar-navigation {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  position: relative;
+  z-index: 11 !important;
+}
+
+.sidebar-navigation li {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  line-height: 20px;
+}
+
+.sidebar-navigation li a {
+  padding: 10px 15px 10px 30px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-navigation li .fa {
+  margin-right: 10px;
+}
+
+.sidebar-navigation li::before {
+  background-color: #627d9b;
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: -4px;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 3px;
+  z-index: -1;
+  text-decoration: none;
+}
+
+.sidebar-navigation li:hover::before {
+  width: 100%;
+}
+
+.sidebar-navigation .header {
+  font-size: 12px;
+  background-color: #151515;
+  padding: 10px 15px 10px 30px;
+  z-index: 9999 !important;
+}
+
+.sidebar-navigation .header::before {
+  background-color: transparent;
+}
+
+.content-container {
+  padding-left: 220px;
+}
+
+.nav-dropdown {
+  color: rgba(139, 56, 56, 0.24);
+  font-weight: bold;
+  margin-left: 17px;
+}
+
+.nav-dropdown-list {
+  opacity: 0.9;
+  background-color: #102a43;
+}
+
+.dropdown-basic {
+  color: white;
+}
+
+.dropdown-basic:hover {
+  color: white;
+}
+
+/* esto es para quitarle una linea azul que le salía al boton toggle cuando le daba click */
+.dropdown-basic:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.list-categories::before {
+  background-color: transparent !important;
+  color: white;
+  margin-right: 20px;
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+#lblCartCount {
+  font-size: 12px;
+  background: #282c34;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+  font-weight: 100px;
+}
+
+.lineBox-h1 {
+  display: block;
+  width: 65%;
+  margin-left: 180px;
+}
+
+.catalogueParent-h1 {
+  display: none;
+}
+
+.lineParent-h1 {
+  display: none;
+}
+
+.listCategories::before {
+  background-color: transparent !important;
+}
+
+#icon-responsive {
+  font-size: 30px;
+  display: none;
+  box-sizing: border-box;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.listCategories {
+  padding-right: 20px;
+  margin-left: -20px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1200px) {
+  .sidebar-container {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Catalogo */
+  .containerCatalogue {
+    width: 70px;
+    margin-left: 35%;
+    margin-top: 900px;
+  }
+  
+  .card-img-top {
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+  .card-h2 {
+    margin-left: -10px;
+    font-size: 22px;
+  }
+
+  .div-button {
+    background-color: #627d9b;
+    opacity: 1;
+    color: #ffffff;
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  .card {
+    transition: none;
+    margin-bottom: 20px;
+  }
+
+  .card:hover {
+    transition: none;
+    transform: none;
+  }
+
+  /* Nav */
+  #icon-responsive {
+    display: inline-block;
+    margin-left: -10px;
+    padding-right: 10px;
+  }
+  .navbar-custom {
+    width: 100% !important;
+  }
+
+  /* Sidebar */
+  .sidebar-container {
+    visibility: hidden;
+  }
+
+  #sideBarLogo {
+    display: none;
+  }
+
+  /* Carrusel */
+  .carouselDiv {
+    width: 560px;
+    margin-left: -150px;
+    margin-top: -60px
+  }
+
+  #img-carousel {
+    width: 560px;
+    height: 550px;
+  }
+
+
+
+  /* Sidebar Right */
+
+  #cd-cart {
+    width: 200px !important;
+  }
+  .cd-empty {
+    margin-left: 80px !important;
+  }
+
+  #increase-btn {
+    margin-top: 25px;
+  }
+  .cd-item-remove {
+    margin-top: -45px;
+    margin-left: 160px;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+}

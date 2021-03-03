@@ -1,0 +1,22 @@
+#increase-btn{
+    background-color:#243B53;
+    color: #ffffff;
+    border: 1px groove #151515;
+    border-radius: 5px;
+    width: 25px;
+    margin-top:5px;
+}
+
+#decrease-btn{
+    background-color: #243B53;
+    color: #ffffff;
+    border: 1px groove #151515;
+    border-radius: 5px;
+    width: 25px;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.productNameCart{
+    font-size: 18px;
+}

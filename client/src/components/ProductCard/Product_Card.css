@@ -1,0 +1,227 @@
+.bodyb {
+  margin-left: 200px;
+  padding-top: 90px;
+}
+
+.content {
+  background-color: #313131;
+  text-align: center;
+}
+
+.content:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+.line {
+  width: 80%;
+  margin: auto;
+}
+
+.description {
+  margin-top: 40px;
+}
+
+.list-style {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.row-margin {
+  margin-top: 70px;
+}
+
+#arrow1 {
+  margin-right: 10px;
+}
+
+#arrow2 {
+  margin-left: 10px;
+}
+
+.price {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.img-fluid {
+  width: 700px;
+  height: 500px;
+  display: inline-block;
+  background-image: url("https://assets.stickpng.com/images/580b57fcd9996e24bc43c4f7.png");
+  transition: 0.5s ease;
+  z-index: 3;
+}
+
+.img-fluid:hover {
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn-custom {
+  background-color: #627d9b;
+}
+
+.btn-custom:hover {
+  background-color: #102a43;
+  opacity: 0.8;
+}
+
+.overlay {
+  margin-top: -400px;
+  margin-left: 40px;
+  opacity: 1;
+  background: transparent;
+  color: #f1f1f1;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  height: 400px;
+}
+
+.overlay:hover {
+  opacity: 0.3;
+  z-index: 3;
+}
+
+#imageCard {
+  display: none;
+}
+
+#imgcontainer:hover .overlay {
+  opacity: 1;
+  z-index: 3;
+}
+
+/*  .renderBar{
+  width: 300px;
+  height: 300px;
+  background-color: #ffff;
+  z-index: 1;
+  padding-left: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 120px;
+  transition: .5s ease;
+  border-radius: 20px;
+}  */
+
+.ratingStarsProductId {
+  list-style: none;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  width: 100px;
+  margin-left: -25px;
+}
+
+.totalRating {
+  font-size: 24px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.reviewsCount {
+  margin-top: -10px;
+}
+
+.close {
+  background: transparent;
+  color: rgb(116, 115, 115);
+  border-radius: 20px;
+  box-shadow: #ffffff;
+  border: transparent;
+  transition: all ease-out 280ms;
+  font-size: 28px;
+}
+
+.usersCalifications {
+  list-style: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-left: -30px;
+  border-top: 30px;
+  color: rgb(219, 219, 6);
+  box-shadow: rgb(77, 77, 2);
+}
+
+.modalBody {
+  color: #ffffff;
+  background-color: #2e2e2e;
+}
+
+#modalContentProductCard {
+  margin-left: 0px;
+}
+
+.lineModalReviews {
+  width: 80%;
+  margin-left: 0px;
+}
+
+.music-buttom {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+#tabMusicDiv{
+  margin-left: 20px;
+}
+
+.nav-tabs .nav-link{
+  margin-left: 30px;
+  color: white;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  #imageCard {
+    display: block;
+    margin-bottom: 60px;
+    height: 300px;
+  }
+  .bodyb {
+    width: 100% !important;
+    margin-left: -10px;
+  }
+
+  iframe {
+    width: 350px;
+    margin-left: -10px;
+}
+  .overlay {
+    width: 100px;
+  }
+  #imgm {
+    display: none;
+  }
+  .box-h1 {
+    padding-top: 90px;
+    margin-left: 25%;
+  }
+
+  .catalogueParent-h1 {
+    display: block;
+    padding-top: 120px;
+    margin-left: 25%;
+  }
+  .lineParent-h1 {
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .lineBox-h1 {
+    width: 80%;
+    margin-left: 20px;
+  }
+}

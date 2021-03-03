@@ -1,0 +1,110 @@
+[
+    {
+        "order_id": 1,
+        "username": "miguel@gmail.com",
+        "product_id": 43,
+        "product_name": "The Last Tour Streamed",
+        "quantity": 1,
+        "price": "20$",
+        "stock": 60
+    },
+    {
+        "order_id": 2,
+        "username": "agustin@gmail.com",
+        "product_id": 43,
+        "product_name": "The Last Tour Streamed",
+        "quantity": 1,
+        "price": "20$",
+        "stock": 60
+    },
+    {
+        "order_id": 3,
+        "username": "damian@gmail.com",
+        "product_id": 43,
+        "product_name": "The Last Tour Streamed",
+        "quantity": 1,
+        "price": "10$",
+        "stock": 10
+    },
+    {
+        "order_id": 4,
+        "username": "rodrigo@gmail.com",
+        "product_id": 43,
+        "product_name": "The Last Tour Streamed",
+        "quantity": 1,
+        "price": "40$",
+        "stock": 50
+    },
+    {
+        "order_id": 5,
+        "username": "victor@gmail.com",
+        "product_id": 43,
+        "product_name": "Drake Island Tour Streamed",
+        "quantity": 1,
+        "price": "20$",
+        "stock": 60
+    },
+    {
+        "order_id": 6,
+        "username": "gabriels@gmail.com",
+        "product_id": 43,
+        "product_name": "The Weeknd Tour Streamed",
+        "quantity": 1,
+        "price": "22$",
+        "stock": 20
+    },
+    {
+        "order_id": 7,
+        "username": "camelia@gmail.com",
+        "product_id": 43,
+        "product_name": "Bad Bunny Streaming",
+        "quantity": 1,
+        "price": "21$",
+        "stock": 60
+      },
+      {
+        "order_id": 8,
+        "username": "liliana@gmail.com",
+        "product_id": 43,
+        "product_name": "The Last Tour Streamed",
+        "quantity": 1,
+        "price": "23$",
+        "stock": 50
+      },
+      {
+        "order_id": 9,
+        "username": "daniel@gmail.com",
+        "product_id": 43,
+        "product_name": "Lana Del Rey Streaming",
+        "quantity": 1,
+        "price": "20$",
+        "stock": 20
+      },
+      {
+        "order_id": 10,
+        "username": "diego@gmail.com",
+        "product_id": 43,
+        "product_name": "Lana Del Rey Streaming",
+        "quantity": 1,
+        "price": "9$",
+        "stock": 10
+      },
+      {
+        "order_id": 11,
+        "username": "jorge@gmail.com",
+        "product_id": 43,
+        "product_name": "Bad Bunny Streaming",
+        "quantity": 1,
+        "price":  "10$",
+        "stock": 600
+      },
+      {
+        "order_id": 12,
+        "username": "gustavo@gmail.com",
+        "product_id": 43,
+        "product_name": "Daddy Yankee Streaming",
+        "quantity": 1,
+        "price": "20$",
+        "stock": 10
+      }
+  ]

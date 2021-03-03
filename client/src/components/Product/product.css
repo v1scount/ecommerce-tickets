@@ -1,0 +1,126 @@
+
+.card-img-top{
+  height: 150px;
+  background-color: #313131;
+}
+
+.cardProduct{
+background-color:#313131;
+/* height: 275px; */
+padding-top: 1px;
+padding-bottom: 3px;
+
+}
+
+.cardProduct:hover{
+background-color: #3B3B3B;
+}
+
+.card{
+  margin:15px;
+  border: transparent ;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  background-color:transparent;
+  width: 150px;
+  transition: 0.5s;
+  
+}
+.card:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 2;
+}
+
+
+.card-h2{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-size: 17px;
+  color:#ffff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.productNameCardCatalogue{
+margin-bottom: -10px;
+}
+
+.productDescriptionCardCatalogue{
+color: #ffffff;
+}
+
+.div-button{
+  display: flex;
+  justify-content: center;
+}
+.button-card{
+  border-radius: 10px;
+  border:transparent;
+  background-color: transparent;
+  width: 100px;
+  background-color:transparent;
+  color: #ffff;
+  font-weight: 900;
+}
+
+.button-card:hover{
+  background-color: #627D9B;
+  opacity: 1;
+  color: #ffffff;
+}
+
+/* Estilos para el banner agotado */
+
+.ribbon {
+position: absolute;
+right: -5px; top: -5px;
+z-index: 1;
+overflow: hidden;
+width: 75px; height: 75px;
+text-align: right;
+}
+.ribbon span {
+font-size: 10px;
+font-weight: bold;
+color: #FFF;
+text-transform: uppercase;
+text-align: center;
+line-height: 20px;
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+width: 100px;
+display: block;
+background: #79A70A;
+background: linear-gradient(#A20000 0%, #BC4949 100%);
+box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+position: absolute;
+top: 19px; right: -21px;
+}
+
+.line{
+color: #9FB3C8
+}
+.ribbon span::before {
+content: "";
+position: absolute; left: 0px; top: 100%;
+z-index: -1;
+border-left: 3px solid #A20000;
+border-right: 3px solid transparent;
+border-bottom: 3px solid transparent;
+border-top: 3px solid #A20000;
+}
+.ribbon span::after {
+content: "";
+position: absolute; right: 0px; top: 100%;
+z-index: -1;
+border-left: 3px solid transparent;
+border-right: 3px solid #A20000;
+border-bottom: 3px solid transparent;
+border-top: 3px solid #A20000;
+}
+
+
