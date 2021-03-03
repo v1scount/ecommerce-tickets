@@ -1,3 +1,4 @@
+require('dotenv').config();
 const  {User} = require('./db.js');
 const bcrypt = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
@@ -8,6 +9,7 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const { decode } = require('jsonwebtoken');
 const bcript =require("bcrypt")
+const { TOKEN_SECRET, CLIENT_ID_FB, CLIENT_SECRET_FB, CLIENT_ID_GO, CLIENT_SECRET_GO} = process.env
 
 module.exports = function (passport){
    
@@ -36,7 +38,7 @@ module.exports = function (passport){
 
     passport.use(
         new JWTStrategy({
-            secretOrKey: process.env.TOKEN_SECRET,
+            secretOrKey: TOKEN_SECRET,
             jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken()
         },async (token,done)=>{
             try {
@@ -49,8 +51,8 @@ module.exports = function (passport){
     
     
     passport.use(new FacebookStrategy({
-        clientID: process.env.CLIENT_ID_FB,
-        clientSecret: process.env.CLIENT_SECRET_FB,
+        clientID: CLIENT_ID_FB,
+        clientSecret: CLIENT_SECRET_FB,
         callbackURL: "http://localhost:3001/user/login_fb"
       },
       function(accessToken, refreshToken, profile, done) {
@@ -62,8 +64,8 @@ module.exports = function (passport){
     ));
 
     passport.use(new GoogleStrategy({
-        clientID: process.env.CLIENT_ID_GO,
-        clientSecret: process.env.CLIENT_SECRET_GO,
+        clientID: CLIENT_ID_GO,
+        clientSecret: CLIENT_SECRET_GO,
         callbackURL: "http://localhost:3001/login/auth/google/login"
       },
       function (accessToken, refreshToken,profile, cb)  {
