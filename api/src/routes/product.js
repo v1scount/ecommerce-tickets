@@ -1,3 +1,4 @@
+require('dotenv').config();
 const server = require('express').Router();
 const { Product , Categories, Reviews,conn, User} = require('../db.js');
 const Sequelize = require('sequelize');
@@ -7,11 +8,18 @@ const fs = require("fs");
 const {promisify} = require("util");
 const pipeline = promisify(require("stream").pipeline);
 const passport = require('passport');
+const cloudinary = require('cloudinary').v2;
+const streamifier = require('streamifier');
+const fileupload = require('express-fileupload');
 
 server.use(cors());
- 
-// Obtener todos los productos con su categoría 
-
+// server.use(fileupload({
+	// 	useTempFiles : true,
+	//     tempFileDir : '/tmp/'
+	// }));
+	
+	// Obtener todos los productos con su categoría 
+	
 server.get('/', (req, res, next) => {
 	Product.findAll({
 		include: {
@@ -21,16 +29,24 @@ server.get('/', (req, res, next) => {
 			res.send(products);
 		})
 		.catch(next);
-});
-
-// Agregar producto
-
-const upload = multer();
-//ruta para guardar producto con sus categorias
-server.post("/",upload.single("file"),passport.authenticate("jwt",{session:false}),async (req, res,next)=>{
-	console.log(req.user)
-	if(req.user.isAdmin && req.user.isAdmin === true || req.user.isAdmin==='true' ){
+	});
 		
+// // Agregar producto
+		
+const upload = multer();
+cloudinary.config({
+	cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+	api_key: process.env.CLOUDINARY_API_KEY,
+	api_secret: process.env.CLOUDINARY_API_SECRET
+});
+// ruta para guardar producto con sus categorias
+		
+// Multer - Local
+		
+server.post("/",upload.single("file"),passport.authenticate("jwt",{session:false}),async (req, res,next)=>{
+	//console.log(req.user)
+	if(req.user.isAdmin && req.user.isAdmin === true || req.user.isAdmin==='true' ){
+				
 		//procesar los  datos recibidos del formulario que hacen parte del body
 		var { name, description, price,stock, genre,video } = req.body;
 		const genreArray=genre.split`,`.map(x=>+x) //convirtiendo el string de generos en un array
@@ -38,34 +54,48 @@ server.post("/",upload.single("file"),passport.authenticate("jwt",{session:false
 
 		//Procesar archivo de imagen recibido
 		const {file} = req;	
+		//console.log(file);
 		
 		if (file.detectedFileExtension != ".jpg" && file.detectedFileExtension != ".png") next(new Error("Invalid file type"));
-		const fileName = 'productoimg' + '_' + Date.now() + file.detectedFileExtension;
-		var img = `http://localhost:3001/img/${fileName}`;//definiendo la url de la imagen que se va a guardar en la base de datos
+		// const fileName = 'productoimg' + '_' + Date.now() + file.detectedFileExtension;
+		// var img = `http://localhost:3001/img/${fileName}`;//definiendo la url de la imagen que se va a guardar en la base de datos
 		//guardar archivo de imagen en el servidor 
-		await pipeline(file.stream,fs.createWriteStream(`${__dirname}/../upload/img/${fileName}`)).catch(e=>{console.log(e)});
-
+		// await pipeline(file.stream,fs.createWriteStream(`${__dirname}/../upload/img/${fileName}`)).catch(e=>{console.log(e)});
+		
+		let img;
+		// let img_id;
+		await cloudinary.uploader.upload(file.path, 
+  			function(error, result) {
+				console.log(result, error); 
+				img = result.url;
+				// img_id = result.public_id;
+			});
+			
+			Product.create({
+				name,
+				description,
+				price,
+				stock,
+				img,
+				video
+			}).then(product=>{
+					product.addCategories(genreArray);
+					res.status(200).json(product)
+			})
+			.catch(e=>{
+				res.status(400).json(e)
+				console.log(e)
+			}) 
+		//console.log(img)
+		
 		
 		// si todo salio bien entonces guardar producto en base de datos
-		Product.create({
-			name,
-			description,
-			price,
-			stock,
-			img,
-			video
-		}).then(product=>{
-				product.addCategories(genreArray);
-				res.status(200).json(product)
-		})
-		.catch(e=>{
-			res.status(400).json(e)
-		}) 
 	}else{
 		res.status(401).json({msg:"Unauthorized"});
 	}
 
 });
+
 
 
 //actualizar un producto
@@ -95,7 +125,7 @@ server.put('/:id', upload.single("file"),passport.authenticate("jwt",{session:fa
 			var fileNameAntiguo = productCat.img;
 			var ultimoSlash = fileNameAntiguo.lastIndexOf("/"); 
 			fileNameAntiguo=fileNameAntiguo.substring(ultimoSlash+1);
-			//borrar la imagen antigua del servidor 
+			// //borrar la imagen antigua del servidor 
 			if(fileNameAntiguo !== 'producto-sin-foto.jpg')
 			await pipeline(fs.unlink(`${__dirname}/../upload/img/${fileNameAntiguo}`,function(){console.log('')})).catch(e=>{console.log(e)});
 			
@@ -103,6 +133,25 @@ server.put('/:id', upload.single("file"),passport.authenticate("jwt",{session:fa
 			var img = `http://localhost:3001/img/${fileName}`;//definiendo la url de la imagen que se va a guardar en la base de datos
 			//guardar el nuevo archivo de imagen en el servidor 
 			await pipeline(file.stream,fs.createWriteStream(`${__dirname}/../upload/img/${fileName}`)).catch(e=>{console.log(e)});
+
+			// let imgOldName = productCat.img;
+			// let imgOldId = productCat.img_id;
+			// let img;
+			// let img_id;
+			// if(imgOldName !== 'producto-sin-foto.jpg') {
+			// 	const path = file.path;
+			// 	await cloudinary.uploader.upload(file.path, function(err, result)  {
+			// 		console.log(result,err);
+			// 		img = result.url;
+			// 		img_id = result.public_id;
+			// 		cloudinary.uploader.destroy(imgOldId, (err, result) => {
+			// 			 img = result.url;
+			// 			 img_id = result.public_id;
+			// 			console.log(result, err);
+			// 		})
+			// 	})
+			// }
+
 		}
 
 		try {
@@ -134,6 +183,7 @@ server.put('/:id', upload.single("file"),passport.authenticate("jwt",{session:fa
 			});
 		} catch (error) {
 			res.status(400).json(error);
+			console.log(error)
 		}
 	}else{
 		res.status(401).json({msg:"Unauthorized"});

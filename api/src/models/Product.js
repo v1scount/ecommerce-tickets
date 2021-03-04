@@ -24,6 +24,10 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING(1000),
       allowNull:false,
     },
+    // img_id: {
+    //   type: DataTypes.STRING(1000),
+    //   allowNull: false
+    // },
     video:{
       type:DataTypes.STRING(),
       allowNull:true,
