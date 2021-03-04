@@ -10,7 +10,8 @@ const pipeline = promisify(require("stream").pipeline);
 const passport = require('passport');
 const cloudinary = require('cloudinary').v2;
 const streamifier = require('streamifier');
-const fileupload = require('express-fileupload');
+const fileupload = require('express-fileupload'); 
+const {CLOUDINARY_CLOUD_NAME,CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET } = process.env
 
 server.use(cors());
 // server.use(fileupload({
@@ -35,9 +36,9 @@ server.get('/', (req, res, next) => {
 		
 const upload = multer();
 cloudinary.config({
-	cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-	api_key: process.env.CLOUDINARY_API_KEY,
-	api_secret: process.env.CLOUDINARY_API_SECRET
+	cloud_name: CLOUDINARY_CLOUD_NAME,
+	api_key: CLOUDINARY_API_KEY,
+	api_secret: CLOUDINARY_API_SECRET
 });
 // ruta para guardar producto con sus categorias
 		
