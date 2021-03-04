@@ -99,7 +99,7 @@ server.post("/",upload.single("file"),/*passport.authenticate("jwt",{session:fal
 
 
 //actualizar un producto
-server.put('/:id', upload.single("file"),/*passport.authenticate("jwt",{session:false})*/,async (req, res, next) => {
+server.put('/:id', upload.single("file"),/*passport.authenticate("jwt",{session:false})*/ async (req, res, next) => {
 	
 	if(req.user.isAdmin && req.user.isAdmin === true || req.user.isAdmin==='true' ){
 		//procesar los  datos recibidos del formualrio que hacen parte del body
