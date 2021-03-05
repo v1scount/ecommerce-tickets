@@ -44,7 +44,7 @@ cloudinary.config({
 		
 // Multer - Local
 		
-server.post("/",upload.single("file"),/*passport.authenticate("jwt",{session:false})*/ async (req, res,next)=>{
+server.post("/",upload.single("file"),passport.authenticate("jwt",{session:false}), async (req, res,next)=>{
 	//console.log(req.user)
 	if(req.user.isAdmin && req.user.isAdmin === true || req.user.isAdmin==='true' ){
 				
